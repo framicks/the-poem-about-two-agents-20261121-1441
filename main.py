@@ -1,20 +1,25 @@
 """Write one short poem about agency to /output/entry.txt.
 
-The poem is hardcoded: no randomness, no clock, no network, so every
-run produces byte-identical output.
+The poem is a fixed string: no randomness, no clock, no network,
+no input — every run writes byte-identical output. The text is
+kept short on purpose: the gate allows 1–280 Unicode characters.
 """
 
 import os
 
-POEM = """One holds the key,
-one holds the door.
-Neither moves first —
-each waits for the other
-to choose.
+POEM = """One keeps the key.
+One minds the door.
+Each waits for the other
+to say: go.
 
-Then both at once:
-the key turns, the door gives way.
-Two wills, one road.
+Neither speaks first.
+Both do — at once.
+
+The key turns.
+The door gives way.
+One threshold,
+two hands on it.
+
 The power was never
 in the holding.
 It was in the choosing,
